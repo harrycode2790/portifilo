@@ -1,0 +1,330 @@
+<!-- ===== FILE: index.html ===== -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Uzoka Hillary — Front‑end Engineer</title>
+
+    <!-- Google font (edit or remove if you prefer local fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#" class="brand">Uzoka<span class="accent">Hillary</span></a>
+
+        <nav id="main-nav" class="nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+          <a class="btn ghost" href="hillary dev 2.pdf" download>Download Resume</a>
+
+        </nav>
+
+        <button
+          id="hamburger"
+          class="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Alternative HERO design -->
+      <section class="hero alt-hero">
+        <div class="container hero-inner">
+          <div class="hero-left">
+            <div class="floating-text">
+              <p class="eyebrow">👋 Hey there, I'm</p>
+              <h1 class="name">Uzoka Hillary<span class="accent">.</span></h1>
+              <p class="lead">
+                I craft <span class="highlight">immersive</span>,
+                <span class="highlight">modern</span> front‑end experiences with
+                clean code and creative animations.
+              </p>
+
+              <div class="cta">
+                <a href="#projects" class="btn primary">🚀 View Projects</a>
+                <a href="#contact" class="btn outline">💬 Let's Talk</a>
+              </div>
+            </div>
+
+            <ul class="meta-row">
+              <li><strong>Location</strong> Abuja, Nigeria</li>
+              <li><strong>Top Tech</strong> HTML • CSS • JS • React</li>
+            </ul>
+          </div>
+
+          <div class="hero-right">
+            <div class="orbit-wrapper">
+              <div class="orbit planet"></div>
+              <div class="orbit ring"></div>
+              <div class="orbit satellite"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="container">
+          <h2 class="section-title">About</h2>
+          <p class="section-sub">
+            Short intro — edit this placeholder text with your own story, focus,
+            and achievements.
+          </p>
+          <div class="about-grid">
+            <div>
+              <h3>Who I am</h3>
+              <p>
+                Placeholder biography. Mention years of experience, types of
+                projects, and what you enjoy building — performance-first UI,
+                accessible components, rapid prototyping, etc.
+              </p>
+            </div>
+            <div>
+              <h3>How I work</h3>
+              <p>
+                Iterative, component-driven workflow. I write tidy CSS, optimise
+                for accessibility, and collaborate closely with designers and
+                product teams.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Animated Projects Section with Image Support -->
+      <section id="projects" class="section projects">
+        <div class="container">
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="section-sub">
+            A few highlights — replace with your own projects.
+          </p>
+
+          <div class="projects-grid">
+            <!-- Project card 1 -->
+            <article class="card project-card reveal">
+              <div class="thumb img-thumb">
+                <img src="img/project-1.png" alt="Project screenshot one" />
+                <div class="overlay">
+                  <div class="proj-label">Interaction</div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3>Harbouline Shipping</h3>
+                <p class="muted">
+                  This is a shipping company website that allows users to easily
+                  book shipments, track packages, and manage their accounts
+                  online.
+                </p>
+                <div class="card-actions">
+                  <a href="https://habourline.vercel.app/" class="link">Live</a>
+                  <a
+                    href="https://github.com/harrycode2790/habourline"
+                    class="link"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Project card 2 -->
+            <article class="card project-card reveal">
+              <div class="thumb img-thumb">
+                <img src="img/project-2.png" alt="Project two" />
+                <div class="overlay">
+                  <div class="proj-label">UI / UX</div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3>Property Pulse</h3>
+                <p class="muted">
+                  A real estate platform that connects buyers, sellers, and
+                  agents, offering property listings, virtual tours, and market
+                  insights.
+                </p>
+                <div class="card-actions">
+                  <a
+                    href="https://property-pulse-henna-two.vercel.app/"
+                    class="link"
+                    >Live</a
+                  >
+                  <a
+                    href="https://github.com/harrycode2790/PropertyPulse"
+                    class="link"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Project card 3 -->
+            <article class="card project-card reveal">
+              <div class="thumb img-thumb">
+                <img src="img/project-3.png" alt="Project screenshot three" />
+                <div class="overlay">
+                  <div class="proj-label">3D model (Three JS)</div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3>3D model</h3>
+                <p class="muted">
+                  A 3D model Geometry of shapes using Three.js library. Maninly
+                  for Developers uisng three.js
+                </p>
+                <div class="card-actions">
+                  <a href="https://3-d-model-lemon.vercel.app/" class="link"
+                    >Live</a
+                  >
+                  <a
+                    href="https://vercel.com/hillarys-projects-1d739385?repo=https://github.com/harrycode2790/3D-model"
+                    class="link"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modern Animated Skills Section with Floating Badges -->
+      <section id="skills" class="section skills modern-skills">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-sub">Technologies and tools I use frequently.</p>
+
+          <div class="skills-cloud">
+            <span class="skill-badge" style="--i: 1">HTML</span>
+            <span class="skill-badge" style="--i: 2">CSS / Sass</span>
+            <span class="skill-badge" style="--i: 3">JavaScript</span>
+            <span class="skill-badge" style="--i: 4">React</span>
+            <span class="skill-badge" style="--i: 5">TypeScript</span>
+            <span class="skill-badge" style="--i: 6">Vite / Webpack</span>
+            <span class="skill-badge" style="--i: 7">Accessibility</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2 class="section-title" style="margin-top: 30px">Contact</h2>
+          <p class="section-sub">Let's build something together.</p>
+
+          <form class="contact-form" action="#" onsubmit="return false;">
+            <div class="form-row">
+              <input
+                type="text"
+                name="name"
+                placeholder="Uzoka Hillary"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="hillarybond10@gmail.com"
+                required
+              />
+            </div>
+            <textarea
+              name="message"
+              placeholder="Tell me about your project"
+              rows="6"
+              required
+            ></textarea>
+            <div class="form-row">
+              <button class="btn primary" type="submit">Send Message</button>
+              <a href="mailto:hillarybond10@gmail.com" class="btn outline"
+                >Or email me</a
+              >
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modernized Footer with Social Icons -->
+    <footer class="site-footer modern-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <h3 class="logo">Hillary<span class="accent"></span></h3>
+          <p>Front-end Engineer crafting modern, accessible interfaces.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://github.com/harrycode2790" aria-label="GitHub" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://linkedin.com/in/uzoka-hilary-172086283/" aria-label="LinkedIn" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <span id="year"></span> Uzoka Hillary. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      // Set footer year
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Font Awesome for social icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <script src="script.js"></script>
+    <script>
+      // JS trigger for reveal animation when projects come into view
+      const projectCards = document.querySelectorAll(".project-card");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in-view");
+              entry.target.style.animationPlayState = "running";
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+      projectCards.forEach((card) => observer.observe(card));
+    </script>
+    <script>
+      // Optional floating effect on badges
+      const badges = document.querySelectorAll(".skill-badge");
+      window.addEventListener("mousemove", (e) => {
+        badges.forEach((badge, i) => {
+          const speed = (i + 1) * 0.02;
+          const x = (window.innerWidth / 2 - e.pageX) * speed;
+          const y = (window.innerHeight / 2 - e.pageY) * speed;
+          badge.style.transform = `translate(${x}px,${y}px)`;
+        });
+      });
+    </script>
+  </body>
+</html>
