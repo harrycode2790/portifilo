@@ -43,9 +43,10 @@ body{
 .btn.ghost{background:transparent;border:1px dashed rgba(255,255,255,0.04);color:var(--muted);padding:0.45rem 0.8rem}
 
 /* Hamburger */
-.hamburger{display:inline-grid;place-items:center;width:44px;height:44px;background:rgba(7,10,18,0.6),;border-radius:10px;border:none;cursor:pointer}
-.hamburger .bar{width:20px;height:2px;background:var(--text);display:block;transition:transform .25s ease,opacity .25s ease}
+.hamburger{display:inline-grid;place-items:center;width:44px;height:44px;background:transparent;border-radius:10px;border:none;cursor:pointer}
+.hamburger .bar{width:15px;height:15px;background:var(--text);display:block;transition:transform .25s ease,opacity .25s ease}
 .hamburger .bar + .bar{margin-top:6px}
+.hamburger[aria-expanded="true"]{background:var(--bg-1);}
 .hamburger[aria-expanded="true"] .bar:nth-child(1){transform:translateY(8px) rotate(45deg)}
 .hamburger[aria-expanded="true"] .bar:nth-child(2){opacity:0;transform:scaleX(0)}
 .hamburger[aria-expanded="true"] .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
