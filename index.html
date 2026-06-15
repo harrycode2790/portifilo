@@ -1,357 +1,691 @@
-<!-- ===== FILE: index.html ===== -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Uzoka Hillary — Front-End Engineer</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hillary Uzoka — Software Developer</title>
+  <meta name="description" content="Software developer with 5+ years building high-performance, scalable systems and responsive web applications. Based in Abuja, Nigeria." />
 
-    <!-- Google font (edit or remove if you prefer local fonts) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="alternate icon" type="image/png" href="favicon.svg" />
+  <meta name="theme-color" content="#0A0A0A" />
 
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a href="#" class="brand">Uzoka<span class="accent">Hillary</span></a>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-        <nav id="main-nav" class="nav" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-          <a class="btn ghost" href="HILLARY'S CV-2.pdf" download>Download Resume</a>
+  <!-- Devicon — tech stack icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
 
-        </nav>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-        <button style="display: none;"
-          id="hamburger"
-          class="hamburger"
-          aria-label="Toggle menu"
-          aria-expanded="false"
-          aria-controls="main-nav"
-        >
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
+  <!-- ══════════════════════════════════════════
+       HEADER
+  ══════════════════════════════════════════ -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="#" class="brand" aria-label="Hillary Uzoka — back to top">
+        <span class="brand-mark" aria-hidden="true">HU</span>
+        <span class="brand-info">
+          <span class="brand-name">Hillary Uzoka</span>
+          <span class="brand-role">Software Developer</span>
+        </span>
+      </a>
+
+      <nav id="main-nav" class="nav" aria-label="Main navigation">
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="HILLARY'S CV-2.pdf" download class="nav-cta" aria-label="Download Hillary's resume">Resume ↓</a>
+      </nav>
+
+      <button
+        id="hamburger"
+        class="hamburger"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════ -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-layout">
+
+          <!-- Text column -->
+          <div class="hero-text">
+
+            <div class="avail-badge">
+              <span class="avail-dot" aria-hidden="true"></span>
+              Open to New Opportunities
+            </div>
+
+            <p class="eyebrow">Software Developer &nbsp;&middot;&nbsp; System Design &nbsp;&middot;&nbsp; Abuja, Nigeria</p>
+
+            <h1 class="hero-name" id="hero-heading">
+              Hillary Uzoka<span class="period">.</span>
+            </h1>
+
+            <p class="hero-statement">
+              Software developer with 5+ years engineering high-performance, scalable
+              systems and responsive applications. Reduced page load times by 40% through
+              expert optimization. Passionate about system design, clean architecture,
+              and building software that scales under pressure.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#work" class="btn-outline">View Work</a>
+              <a href="HILLARY'S CV-2.pdf" download class="btn-ghost">Download Resume &rarr;</a>
+            </div>
+
+            <div class="hero-metrics">
+              <div class="metric">
+                <span class="metric-num" data-count="5" data-suffix="+">5+</span>
+                <span class="metric-label">Years experience</span>
+              </div>
+              <div class="metric-rule" aria-hidden="true"></div>
+              <div class="metric">
+                <span class="metric-num" data-count="40" data-suffix="%">40%</span>
+                <span class="metric-label">Load time reduction</span>
+              </div>
+              <div class="metric-rule" aria-hidden="true"></div>
+              <div class="metric">
+                <span class="metric-num" data-count="3" data-suffix="">3</span>
+                <span class="metric-label">Companies shipped</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Photo column -->
+          <figure class="hero-photo-wrap">
+            <div class="hero-photo">
+              <img src="img/hillary _picture.jpeg" alt="Hillary Uzoka — Software Developer" />
+            </div>
+            <figcaption class="hero-photo-caption">
+              Hillary Uzoka &mdash; Software Developer
+            </figcaption>
+          </figure>
+
+        </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <!-- Alternative HERO design -->
-      <section class="hero alt-hero">
-        <div class="container hero-inner">
-          <div class="hero-left">
-            <div class="floating-text">
-              <p class="eyebrow">👋 Hey there, I'm</p>
-              <h1 class="name">Uzoka Hillary<span class="accent">.</span></h1>
-              <p class="lead">
-                I craft <span class="highlight">immersive</span>,
-                <span class="highlight">modern</span> front‑end experiences with
-                clean code and creative animations.
+    <!-- ══════════════════════════════════════════
+         SKILLS — section 01 (moved up)
+    ══════════════════════════════════════════ -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+
+        <header class="section-header" data-anim>
+          <span class="section-num" aria-hidden="true">01</span>
+          <h2 class="section-title" id="skills-heading">Skills &amp; Expertise</h2>
+        </header>
+
+        <!-- ── Frontend ── -->
+        <div class="skill-category">
+          <h3 class="skill-cat-label">Frontend</h3>
+          <div class="skill-icon-grid" data-anim-group data-stagger="0.04">
+
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-html5-original colored" aria-hidden="true"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-css3-original colored" aria-hidden="true"></i>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-javascript-plain colored" aria-hidden="true"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-typescript-plain colored" aria-hidden="true"></i>
+              <span>TypeScript</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-react-original colored" aria-hidden="true"></i>
+              <span>React</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-nextjs-original colored" aria-hidden="true"></i>
+              <span>Next.js</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-tailwindcss-plain colored" aria-hidden="true"></i>
+              <span>Tailwind</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-sass-original colored" aria-hidden="true"></i>
+              <span>Sass</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-threejs-original colored" aria-hidden="true"></i>
+              <span>Three.js</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <img class="skill-svg-icon" src="https://cdn.simpleicons.org/avalonia" alt="" aria-hidden="true" />
+              <span>Avalonia</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── Backend & Data ── -->
+        <div class="skill-category">
+          <h3 class="skill-cat-label">Backend &amp; Data</h3>
+          <div class="skill-icon-grid" data-anim-group data-stagger="0.04">
+
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-nodejs-original colored" aria-hidden="true"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-php-plain colored" aria-hidden="true"></i>
+              <span>PHP</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-laravel-plain colored" aria-hidden="true"></i>
+              <span>Laravel</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-mongodb-plain colored" aria-hidden="true"></i>
+              <span>MongoDB</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-mysql-original colored" aria-hidden="true"></i>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-postgresql-plain colored" aria-hidden="true"></i>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-redis-plain colored" aria-hidden="true"></i>
+              <span>Redis</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-dot-net-plain colored" aria-hidden="true"></i>
+              <span>.NET</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── Tooling & System Design ── -->
+        <div class="skill-category">
+          <h3 class="skill-cat-label">Tooling &amp; System Design</h3>
+          <div class="skill-icon-grid" data-anim-group data-stagger="0.04">
+
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-git-plain colored" aria-hidden="true"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-github-original colored" aria-hidden="true"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-docker-plain colored" aria-hidden="true"></i>
+              <span>Docker</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-amazonwebservices-plain-wordmark colored" aria-hidden="true"></i>
+              <span>AWS</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-linux-plain colored" aria-hidden="true"></i>
+              <span>Linux</span>
+            </div>
+            <div class="skill-icon-card" data-anim>
+              <i class="devicon-vscode-plain colored" aria-hidden="true"></i>
+              <span>VS Code</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── Professional (text only) ── -->
+        <div class="skill-category">
+          <h3 class="skill-cat-label">Professional</h3>
+          <div class="skill-tag-row" data-anim>
+            <span>Cross-functional Collaboration</span>
+            <span>Technical Documentation</span>
+            <span>Problem Solving</span>
+            <span>CI/CD Pipelines</span>
+            <span>Code Review &amp; Testing</span>
+            <span>Performance Optimization</span>
+            <span>Attention to Detail</span>
+            <span>Time Management</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         WORK / PROJECTS — section 02
+    ══════════════════════════════════════════ -->
+    <section id="work" class="section" aria-labelledby="work-heading">
+      <div class="container">
+
+        <header class="section-header" data-anim>
+          <span class="section-num" aria-hidden="true">02</span>
+          <h2 class="section-title" id="work-heading">Selected Work</h2>
+        </header>
+
+        <div class="projects-list">
+
+          <!-- Project 01 — Harbouline -->
+          <article class="project-entry">
+            <a
+              href="https://habourline.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-screenshot"
+              aria-label="View Harbouline Shipping live"
+              data-anim data-from="left"
+            >
+              <img src="img/project-1.png" alt="Harbouline Shipping platform" loading="lazy" />
+            </a>
+            <div class="project-detail" data-anim data-from="right">
+              <div class="project-index" aria-hidden="true">01</div>
+              <p class="project-category">Shipping &middot; Web App &middot; 2024</p>
+              <h3 class="project-name">Harbouline Shipping</h3>
+              <p class="project-desc">
+                A full-service shipping platform enabling users to book shipments, track packages in real time, and manage their accounts — fully responsive and accessible across all devices.
               </p>
-
-              <div class="cta">
-                <a href="#projects" class="btn primary">🚀 View Projects</a>
-                <a href="#contact" class="btn outline">💬 Let's Talk</a>
+              <div class="project-ps">
+                <div class="ps-col">
+                  <h4 class="ps-head">Problem</h4>
+                  <p>No centralized online platform for users to book, track, or manage shipments efficiently and transparently.</p>
+                </div>
+                <div class="ps-col">
+                  <h4 class="ps-head">Solution</h4>
+                  <p>Responsive shipping platform with booking flows, real-time package tracking, and account management — built with accessibility and UX first.</p>
+                </div>
               </div>
+              <div class="project-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Responsive Design</span>
+              </div>
+              <nav class="project-links" aria-label="Harbouline project links">
+                <a href="https://habourline.vercel.app/" target="_blank" rel="noopener noreferrer" class="proj-link">Live Demo &nearr;</a>
+                <a href="https://github.com/harrycode2790/habourline" target="_blank" rel="noopener noreferrer" class="proj-link">GitHub &nearr;</a>
+              </nav>
             </div>
+          </article>
 
-            <ul class="meta-row">
-              <li><strong>Location</strong> Abuja, Nigeria</li>
-              <li><strong>Top Tech</strong> HTML • CSS • JS • React</li>
-            </ul>
-          </div>
-
-          <div class="hero-right">
-            <div class="orbit-wrapper">
-              <div class="orbit planet"></div>
-              <div class="orbit ring"></div>
-              <div class="orbit satellite"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="section about">
-        <div class="container">
-          <h2 class="section-title">About</h2>
-          <p class="section-sub">
-            Short intro — edit this placeholder text with your own story, focus,
-            and achievements.
-          </p>
-          <div class="about-grid">
-            <div>
-              <h3>Who I am</h3>
-              <p>
-                Placeholder biography. Mention years of experience, types of
-                projects, and what you enjoy building — performance-first UI,
-                accessible components, rapid prototyping, etc.
+          <!-- Project 02 — BanexAI (reverse) -->
+          <article class="project-entry reverse">
+            <a
+              href="https://banexai.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-screenshot"
+              aria-label="Visit BanexAI live"
+              data-anim data-from="right"
+            >
+              <img src="img/banexai_project.png" alt="BanexAI AI-powered recruitment platform" loading="lazy" />
+            </a>
+            <div class="project-detail" data-anim data-from="left">
+              <div class="project-index" aria-hidden="true">02</div>
+              <p class="project-category">AI &middot; SaaS &middot; Next.js &middot; Node.js &middot; 2025</p>
+              <h3 class="project-name">BanexAI</h3>
+              <p class="project-desc">
+                AI-powered recruitment platform that helps employers discover, assess, and hire top talent — while giving job seekers AI-optimised CVs, smart job matching, and interview prep tools.
               </p>
+              <div class="project-ps">
+                <div class="ps-col">
+                  <h4 class="ps-head">Problem</h4>
+                  <p>Traditional hiring is slow, bias-prone, and guesswork-heavy — employers waste hours screening CVs while qualified candidates go unnoticed.</p>
+                </div>
+                <div class="ps-col">
+                  <h4 class="ps-head">Solution</h4>
+                  <p>Built a full-stack SaaS: Next.js frontend for a fast, SEO-friendly experience and a Node.js backend driving AI talent matching, automated CV screening, smart assessments, and data-driven hiring dashboards.</p>
+                </div>
+              </div>
+              <div class="project-stack">
+                <span>Next.js</span>
+                <span>Node.js</span>
+                <span>AI/ML</span>
+                <span>REST API</span>
+                <span>SaaS</span>
+              </div>
+              <nav class="project-links" aria-label="BanexAI project links">
+                <a href="https://banexai.com" target="_blank" rel="noopener noreferrer" class="proj-link">Live Site &nearr;</a>
+              </nav>
             </div>
-            <div>
-              <h3>How I work</h3>
-              <p>
-                Iterative, component-driven workflow. I write tidy CSS, optimise
-                for accessibility, and collaborate closely with designers and
-                product teams.
+          </article>
+
+          <!-- Project 03 — WebRTC Video Chat -->
+          <article class="project-entry">
+            <a
+              href="https://webrtc-project-pi.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-screenshot"
+              aria-label="View WebRTC Video Chat live"
+              data-anim data-from="left"
+            >
+              <img src="img/webrtc_project.png" alt="WebRTC peer-to-peer video chat application" loading="lazy" />
+            </a>
+            <div class="project-detail" data-anim data-from="right">
+              <div class="project-index" aria-hidden="true">03</div>
+              <p class="project-category">WebRTC &middot; Socket.io &middot; Node.js &middot; React &middot; 2025</p>
+              <h3 class="project-name">WebRTC Video Chat</h3>
+              <p class="project-desc">
+                Production-ready peer-to-peer video calling app with a React frontend and a Node.js + Socket.IO signaling server — deployed as a split architecture for reliable real-time media across restrictive networks.
               </p>
+              <div class="project-ps">
+                <div class="ps-col">
+                  <h4 class="ps-head">Problem</h4>
+                  <p>STUN-only WebRTC fails for users behind corporate firewalls and strict NATs — most production video apps silently break without a proper TURN relay fallback.</p>
+                </div>
+                <div class="ps-col">
+                  <h4 class="ps-head">Solution</h4>
+                  <p>Split deployment: React client on Vercel, signaling server on a dedicated Node host. Configurable ICE servers with TURN support ensure connectivity for all network conditions.</p>
+                </div>
+              </div>
+              <div class="project-stack">
+                <span>WebRTC</span>
+                <span>React</span>
+                <span>Socket.io</span>
+                <span>Node.js</span>
+                <span>TURN/STUN</span>
+              </div>
+              <nav class="project-links" aria-label="WebRTC Video Chat project links">
+                <a href="https://webrtc-project-pi.vercel.app/" target="_blank" rel="noopener noreferrer" class="proj-link">Live Demo &nearr;</a>
+                <a href="https://github.com/harrycode2790/webrtc-project" target="_blank" rel="noopener noreferrer" class="proj-link">GitHub &nearr;</a>
+              </nav>
+            </div>
+          </article>
+
+          <!-- Project 04 — 3D Explorer (reverse) -->
+          <article class="project-entry reverse">
+            <a
+              href="https://3-d-model-lemon.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-screenshot"
+              aria-label="View 3D Geometry Explorer live"
+              data-anim data-from="right"
+            >
+              <img src="img/project-3.png" alt="3D Geometry Explorer — Three.js" loading="lazy" />
+            </a>
+            <div class="project-detail" data-anim data-from="left">
+              <div class="project-index" aria-hidden="true">04</div>
+              <p class="project-category">3D &middot; Three.js &middot; WebGL &middot; 2024</p>
+              <h3 class="project-name">3D Geometry Explorer</h3>
+              <p class="project-desc">
+                Interactive 3D geometry showcase rendering complex geometric shapes in real time — built for developers learning WebGL and 3D graphics on the web.
+              </p>
+              <div class="project-ps">
+                <div class="ps-col">
+                  <h4 class="ps-head">Problem</h4>
+                  <p>Three.js and WebGL concepts are abstract and hard to learn without live, interactive, well-structured examples to explore.</p>
+                </div>
+                <div class="ps-col">
+                  <h4 class="ps-head">Solution</h4>
+                  <p>Interactive showcase with real-time 3D geometry rendering — giving developers a hands-on reference for working with WebGL in the browser.</p>
+                </div>
+              </div>
+              <div class="project-stack">
+                <span>Three.js</span>
+                <span>WebGL</span>
+                <span>JavaScript</span>
+              </div>
+              <nav class="project-links" aria-label="3D Explorer project links">
+                <a href="https://3-d-model-lemon.vercel.app/" target="_blank" rel="noopener noreferrer" class="proj-link">Live Demo &nearr;</a>
+                <a href="https://github.com/harrycode2790/3D-model" target="_blank" rel="noopener noreferrer" class="proj-link">GitHub &nearr;</a>
+              </nav>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         ABOUT — section 03 (moved down)
+    ══════════════════════════════════════════ -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+
+        <header class="section-header" data-anim>
+          <span class="section-num" aria-hidden="true">03</span>
+          <h2 class="section-title" id="about-heading">About</h2>
+        </header>
+
+        <div class="about-layout" data-anim>
+
+          <div class="about-copy">
+            <p>
+              I'm a software developer based in Abuja, Nigeria, with a background in
+              Mechanical Engineering — a combination that gives me a disciplined,
+              systems-level approach to building software. Over 5+ years, I've shipped
+              production applications for companies across security, healthcare, and
+              fintech, consistently delivering clean, performant interfaces on schedule.
+            </p>
+            <p>
+              Currently building at Quadratix Limited in Lagos, where I took ownership
+              of an uncompleted project and led it to a successful client launch —
+              implementing modules, integrating APIs, and introducing CI/CD practices.
+              I work across the full stack — from system architecture and API design
+              to polished interfaces that users actually touch.
+            </p>
+          </div>
+
+          <aside class="about-sidebar" aria-label="Quick facts">
+            <dl class="meta-list">
+              <div class="meta-row">
+                <dt>Based in</dt>
+                <dd>Karu, FCT Abuja, Nigeria</dd>
+              </div>
+              <div class="meta-row">
+                <dt>worked at</dt>
+                <dd>Quadratix Limited, Lagos<br><span class="meta-note">Apr 2025 &ndash; May 2026</span></dd>
+              </div>
+              <div class="meta-row">
+                <dt>Education</dt>
+                <dd>B.Eng Mechanical Engineering<br><span class="meta-note">Federal University of Petroleum Resources</span></dd>
+              </div>
+              <div class="meta-row">
+                <dt>Open to</dt>
+                <dd>Freelance &middot; Contract &middot; Full-time</dd>
+              </div>
+            </dl>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         EXPERIENCE — section 04
+    ══════════════════════════════════════════ -->
+    <section id="experience" class="section" aria-labelledby="exp-heading">
+      <div class="container">
+
+        <header class="section-header" data-anim>
+          <span class="section-num" aria-hidden="true">04</span>
+          <h2 class="section-title" id="exp-heading">Experience</h2>
+        </header>
+
+        <p class="section-lead" data-anim>
+          Professional roles across security, healthcare, and software — delivering production-grade systems in real working environments.
+        </p>
+
+        <div class="exp-list" data-anim-group data-stagger="0.12">
+
+          <article class="exp-card" data-anim>
+            <div class="exp-header">
+              <div class="exp-left">
+                <h3 class="exp-role">Front-End Developer</h3>
+                <p class="exp-company">Quadratix Limited &middot; Ikoyi, Lagos</p>
+              </div>
+              <time class="exp-date" datetime="2025-04">Apr 2025 &ndash; May 2026</time>
+            </div>
+            <p class="exp-desc">
+              Built responsive web applications for a security company using React, HTML, CSS, and Bootstrap. Took ownership of an uncompleted project and led it to a successful client launch through module implementation and full API integration. Orchestrated CI/CD pipelines, conducted thorough code reviews, and implemented unit, integration, and end-to-end testing — ensuring delivery of top-tier software solutions.
+            </p>
+          </article>
+
+          <article class="exp-card" data-anim>
+            <div class="exp-header">
+              <div class="exp-left">
+                <h3 class="exp-role">Data Management</h3>
+                <p class="exp-company">Helium Medicals &middot; Abuja</p>
+              </div>
+              <time class="exp-date" datetime="2024-01">Jan 2024 &ndash; Aug 2024</time>
+            </div>
+            <p class="exp-desc">
+              Improved healthcare reporting quality and shortened process request time by 80% through redesigned forms and streamlined data workflows. Managed a database of 500+ customers, enforced data integrity standards, and consistently met departmental benchmarks for speed and accuracy — receiving recognition for cross-team coordination contributions.
+            </p>
+          </article>
+
+          <article class="exp-card" data-anim>
+            <div class="exp-header">
+              <div class="exp-left">
+                <h3 class="exp-role">Software Engineer</h3>
+                <p class="exp-company">PixSoftSoftwareSolution &middot; Abuja</p>
+              </div>
+              <time class="exp-date" datetime="2022-10">Oct 2022 &ndash; May 2023</time>
+            </div>
+            <p class="exp-desc">
+              Designed, developed, and maintained responsive web applications using HTML, CSS, and React. Integrated RESTful APIs between frontend and backend systems, optimizing performance and functionality. Conducted code reviews and unit testing — achieving a bug rate of less than 2% in production. Collaborated with cross-functional teams, reducing development time by 15%.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         CONTACT — section 05
+    ══════════════════════════════════════════ -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <header class="section-header" data-anim>
+          <span class="section-num" aria-hidden="true">05</span>
+          <h2 class="section-title" id="contact-heading">Let&rsquo;s Build<br class="title-br">Something Together</h2>
+        </header>
+
+        <div class="contact-layout">
+
+          <!-- Left: lead + channels -->
+          <div class="contact-info" data-anim>
+            <p class="contact-lead">
+              Have a project, idea, or opportunity? Fill in the form and I&rsquo;ll respond as soon as possible via WhatsApp.
+            </p>
+
+            <div class="contact-channels">
+              <a href="mailto:hillarybond10@gmail.com" class="contact-channel">
+                <span>Send an Email</span>
+                <span class="ch-arrow" aria-hidden="true">&nearr;</span>
+              </a>
+              <a href="https://github.com/harrycode2790" target="_blank" rel="noopener noreferrer" class="contact-channel">
+                <span>GitHub</span>
+                <span class="ch-arrow" aria-hidden="true">&nearr;</span>
+              </a>
+              <a href="https://linkedin.com/in/uzoka-hilary-172086283/" target="_blank" rel="noopener noreferrer" class="contact-channel">
+                <span>LinkedIn</span>
+                <span class="ch-arrow" aria-hidden="true">&nearr;</span>
+              </a>
+              <a href="https://wa.me/2349069440134" target="_blank" rel="noopener noreferrer" class="contact-channel">
+                <span>WhatsApp Direct</span>
+                <span class="ch-arrow" aria-hidden="true">&nearr;</span>
+              </a>
+              <a href="tel:+2349069440134" class="contact-channel">
+                <span>+234 906 944 0134</span>
+                <span class="ch-arrow" aria-hidden="true">&nearr;</span>
+              </a>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- Animated Projects Section with Image Support -->
-      <section id="projects" class="section projects">
-        <div class="container">
-          <h2 class="section-title">Selected Projects</h2>
-          <p class="section-sub">
-            A few highlights — replace with your own projects.
-          </p>
-
-          <div class="projects-grid">
-            <!-- Project card 1 -->
-            <article class="card project-card reveal">
-              <div class="thumb img-thumb">
-                <img src="img/project-1.png" alt="Project screenshot one" />
-                <div class="overlay">
-                  <div class="proj-label">Interaction</div>
-                </div>
-              </div>
-              <div class="card-body">
-                <h3>Harbouline Shipping</h3>
-                <p class="muted">
-                  This is a shipping company website that allows users to easily
-                  book shipments, track packages, and manage their accounts
-                  online.
-                </p>
-                <div class="card-actions">
-                  <a href="https://habourline.vercel.app/" class="link">Live</a>
-                  <a
-                    href="https://github.com/harrycode2790/habourline"
-                    class="link"
-                    >Code</a
-                  >
-                </div>
-              </div>
-            </article>
-
-            <!-- Project card 2 -->
-            <article class="card project-card reveal">
-              <div class="thumb img-thumb">
-                <img src="img/project-2.png" alt="Project two" />
-                <div class="overlay">
-                  <div class="proj-label">UI / UX</div>
-                </div>
-              </div>
-              <div class="card-body">
-                <h3>Property Pulse</h3>
-                <p class="muted">
-                  A real estate platform that connects buyers, sellers, and
-                  agents, offering property listings, virtual tours, and market
-                  insights.
-                </p>
-                <div class="card-actions">
-                  <a
-                    href="https://property-pulse-henna-two.vercel.app/"
-                    class="link"
-                    >Live</a
-                  >
-                  <a
-                    href="https://github.com/harrycode2790/PropertyPulse"
-                    class="link"
-                    >Code</a
-                  >
-                </div>
-              </div>
-            </article>
-
-            <!-- Project card 3 -->
-            <article class="card project-card reveal">
-              <div class="thumb img-thumb">
-                <img src="img/project-3.png" alt="Project screenshot three" />
-                <div class="overlay">
-                  <div class="proj-label">3D model (Three JS)</div>
-                </div>
-              </div>
-              <div class="card-body">
-                <h3>3D model</h3>
-                <p class="muted">
-                  A 3D model Geometry of shapes using Three.js library. Maninly
-                  for Developers uisng three.js
-                </p>
-                <div class="card-actions">
-                  <a href="https://3-d-model-lemon.vercel.app/" class="link"
-                    >Live</a
-                  >
-                  <a
-                    href="https://vercel.com/hillarys-projects-1d739385?repo=https://github.com/harrycode2790/3D-model"
-                    class="link"
-                    >Code</a
-                  >
-                </div>
-              </div>
-            </article>
-
-            <!-- Project card 4 -->
-            <article class="card project-card reveal">
-              <div class="thumb img-thumb">
-                <img src="img/project-4.png" alt="Project screenshot three" />
-                <div class="overlay">
-                  <div class="proj-label">FLUX CHAT</div>
-                </div>
-              </div>
-              <div class="card-body">
-                <h3>Flux Chat</h3>
-                <p class="muted">
-                  A Chat App that uses realtime chat with socket.io with integration of REST APis with node js </p>
-                <div class="card-actions">
-                  <a href="https://fluxchat-cm8jd.sevalla.app/" class="link"
-                    >Live</a
-                  >
-                  <a
-                    href="https://github.com/harrycode2790/Fluxchat"
-                    class="link"
-                    >Code</a
-                  >
-                </div>
-              </div>
-            </article>
-
-
-          </div>
-        </div>
-      </section>
-
-      <!-- Modern Animated Skills Section with Floating Badges -->
-      <section id="skills" class="section skills modern-skills">
-        <div class="container">
-          <h2 class="section-title">Skills</h2>
-          <p class="section-sub">Technologies and tools I use frequently.</p>
-
-          <div class="skills-cloud">
-            <span class="skill-badge" style="--i: 1">HTML</span>
-            <span class="skill-badge" style="--i: 2">CSS / Sass</span>
-            <span class="skill-badge" style="--i: 3">JavaScript</span>
-            <span class="skill-badge" style="--i: 4">React</span>
-            <span class="skill-badge" style="--i: 5">TypeScript</span>
-            <span class="skill-badge" style="--i: 6">Vite / Webpack</span>
-            <span class="skill-badge" style="--i: 7">Accessibility</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact">
-        <div class="container">
-          <h2 class="section-title" style="margin-top: 30px">Contact</h2>
-          <p class="section-sub">Let's build something together.</p>
-
-          <form class="contact-form" action="#" onsubmit="return false;">
-            <div class="form-row">
+          <!-- Right: WhatsApp form -->
+          <form
+            id="wa-form"
+            class="wa-form"
+            novalidate
+            aria-label="Contact form — sends message via WhatsApp"
+            data-anim style="--anim-delay: 0.15s"
+          >
+            <div class="form-field">
+              <label for="wa-name">Name</label>
               <input
                 type="text"
+                id="wa-name"
                 name="name"
-                placeholder="Uzoka Hillary"
+                placeholder="Your name"
                 required
+                autocomplete="name"
               />
+            </div>
+            <div class="form-field">
+              <label for="wa-email">Email</label>
               <input
                 type="email"
+                id="wa-email"
                 name="email"
-                placeholder="hillarybond10@gmail.com"
+                placeholder="your@email.com"
                 required
+                autocomplete="email"
               />
             </div>
-            <textarea
-              name="message"
-              placeholder="Tell me about your project"
-              rows="6"
-              required
-            ></textarea>
-            <div class="form-row">
-              <button class="btn primary" type="submit">Send Message</button>
-              <a href="mailto:hillarybond10@gmail.com" class="btn outline"
-                >Or email me</a
-              >
+            <div class="form-field">
+              <label for="wa-message">Message</label>
+              <textarea
+                id="wa-message"
+                name="message"
+                rows="5"
+                placeholder="Tell me about your project or opportunity..."
+                required
+              ></textarea>
             </div>
+            <p id="wa-error" class="form-error" role="alert" aria-live="polite" hidden>
+              Please fill in all fields before sending.
+            </p>
+            <button type="submit" class="btn-wa">
+              Send via WhatsApp &rarr;
+            </button>
           </form>
-        </div>
-      </section>
-    </main>
 
-    <!-- Modernized Footer with Social Icons -->
-    <footer class="site-footer modern-footer">
-      <div class="container footer-inner">
-        <div class="footer-brand">
-          <h3 class="logo">Hillary<span class="accent"></span></h3>
-          <p>Front-end Engineer crafting modern, accessible interfaces.</p>
-        </div>
-
-        <div class="footer-links">
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </div>
-
-        <div class="footer-socials">
-          <a href="https://github.com/harrycode2790" aria-label="GitHub" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://linkedin.com/in/uzoka-hilary-172086283/" aria-label="LinkedIn" target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
         </div>
       </div>
-      <div class="footer-bottom">
-        © <span id="year"></span> Uzoka Hillary. All rights reserved.
-      </div>
-    </footer>
+    </section>
 
-    <script>
-      // Set footer year
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+  </main>
 
-    <!-- Font Awesome for social icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-copy">&copy; <span id="year"></span> Hillary Uzoka. All rights reserved.</span>
+      <span class="footer-right">Software Developer &middot; Abuja, Nigeria</span>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
-    <script>
-      // JS trigger for reveal animation when projects come into view
-      const projectCards = document.querySelectorAll(".project-card");
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("in-view");
-              entry.target.style.animationPlayState = "running";
-            }
-          });
-        },
-        { threshold: 0.15 }
-      );
-      projectCards.forEach((card) => observer.observe(card));
-    </script>
-    <script>
-      // Optional floating effect on badges
-      const badges = document.querySelectorAll(".skill-badge");
-      window.addEventListener("mousemove", (e) => {
-        badges.forEach((badge, i) => {
-          const speed = (i + 1) * 0.02;
-          const x = (window.innerWidth / 2 - e.pageX) * speed;
-          const y = (window.innerHeight / 2 - e.pageY) * speed;
-          badge.style.transform = `translate(${x}px,${y}px)`;
-        });
-      });
-    </script>
-  </body>
+  <script src="script.js"></script>
+
+</body>
 </html>
